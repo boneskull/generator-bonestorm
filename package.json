@@ -1,0 +1,36 @@
+{
+  "name": "generator-bonestorm",
+  "version": "0.0.0",
+  "description": "boneskull's generator",
+  "homepage": "https://github.com/boneskull/bonestorm",
+  "author": {
+    "name": "Christopher Hiller",
+    "email": "boneskull@boneskull.com",
+    "url": "https://boneskull.com"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "boneskull",
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "figlet": "^1.2.0",
+    "yeoman-generator": "^1.0.0",
+    "yosay": "^1.2.1"
+  },
+  "devDependencies": {
+    "semistandard": "^9.2.1",
+    "yeoman-assert": "^2.2.1",
+    "yeoman-test": "^1.6.0"
+  },
+  "repository": {
+    "url": "https://github.com/boneskull/bonestorm.git",
+    "type": "git"
+  },
+  "scripts": {},
+  "license": "MIT"
+}
