@@ -36,6 +36,11 @@ export default class Bonestorm extends Generator {
       type: String,
       desc: 'GitHub username or org'
     });
+
+    this.option('yarn', {
+      type: Boolean,
+      desc: 'Use Yarn'
+    });
   }
 
   initializing () {
@@ -44,6 +49,7 @@ export default class Bonestorm extends Generator {
     })));
 
     const pkg = this.fs.readJSON(this.destinationPath('package.json'), {});
+    const yarnLockfile = this.fs.exists(this.destinationPath('yarn.lock'));
 
     const props = _.pick([
       'name',
@@ -54,6 +60,9 @@ export default class Bonestorm extends Generator {
       'license'
     ], pkg);
 
+    if (yarnLockfile) {
+      props.useYarn = true;
+    }
     const author = _.isObject(pkg.author) ? pkg.author : parseAuthor(
       pkg.author || '');
 
@@ -150,7 +159,7 @@ export default class Bonestorm extends Generator {
         name: 'useYarn',
         type: 'confirm',
         message: 'Use Yarn',
-        when: _.isUndefined(this.options.useYarn)
+        when: _.isUndefined(this.props.useYarn)
       },
       {
         name: 'target',

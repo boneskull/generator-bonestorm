@@ -12,6 +12,7 @@ export default class BonestormNode extends Generator {
   }
 
   async prompting () {
+    // XXX: default not working
     const prompts = [
       {
         name: 'engine',
@@ -32,6 +33,10 @@ export default class BonestormNode extends Generator {
     ];
 
     this.props = _.merge(this.props, await this.prompt(prompts));
+  }
+
+  default () {
+    this.composeWith(require.resolve('../babel'), this.props);
   }
 
   writing () {
