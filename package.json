@@ -1,7 +1,7 @@
 {
   "name": "generator-bonestorm",
   "version": "0.0.0",
-  "description": "boneskull's generator",
+  "description": "a Yeoman generator written by boneskulls for boneskulls",
   "homepage": "https://github.com/boneskull/bonestorm",
   "author": {
     "name": "Christopher Hiller",
@@ -51,7 +51,10 @@
     "type": "git"
   },
   "scripts": {
-    "build:watch": "babel --watch src --out-dir generators"
+    "build:watch": "babel --source-maps --watch src --out-dir generators",
+    "prepublish": "babel --source-maps src --out-dir generators",
+    "test": "eslint '*.js' src test",
+    "preversion": "npm test"
   },
   "license": "MIT"
 }
