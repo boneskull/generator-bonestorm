@@ -10,7 +10,8 @@
   },
   "files": [
     "generators",
-    "src"
+    "src",
+    "templates"
   ],
   "keywords": [
     "boneskull",
