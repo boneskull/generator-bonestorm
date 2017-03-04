@@ -21,9 +21,13 @@ export default class BonestormBabel extends Generator {
         'babel-plugin-add-module-exports',
         'babel-plugin-transform-runtime',
         'babel-preset-bluebird',
+        'babel-preset-env',
         'babel-register'
       ], rootPkg.devDependencies),
-      dependencies: _.pick(['babel-runtime'], rootPkg.dependencies),
+      dependencies: _.pick([
+        'babel-runtime',
+        'source-map-support'
+      ], rootPkg.dependencies),
       scripts: {
         build: 'babel --source-maps --out-dir dist src',
         'build:watch': 'babel --source-maps --watch --out-dir dist src'
