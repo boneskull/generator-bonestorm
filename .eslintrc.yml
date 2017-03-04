@@ -1,0 +1,9 @@
+extends:
+  - semistandard
+  - plugin:lodash-fp/recommended
+plugins:
+  - lodash-fp
+rules:
+  strict:
+    - error
+    - safe

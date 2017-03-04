@@ -24,4 +24,3 @@ typings/
 *.tgz
 .yarn-integrity
 .env
-generators

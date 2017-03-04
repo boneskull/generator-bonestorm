@@ -8,10 +8,12 @@
         },
         "loose": true
       }
-    ]
+    ],
+    "bluebird"
   ],
   "plugins": [
-    "transform-runtime"
+    "transform-runtime",
+    "add-module-exports"
   ],
   "sourceMaps": true
 }

@@ -9,28 +9,49 @@
     "url": "https://boneskull.com"
   },
   "files": [
-    "generators"
+    "generators",
+    "src"
   ],
-  "main": "generators/index.js",
   "keywords": [
     "boneskull",
     "yeoman-generator"
   ],
   "dependencies": {
+    "awful": "^2.0.2",
+    "babel-runtime": "^6.23.0",
+    "bluebird": "^3.5.0",
     "chalk": "^1.1.3",
     "figlet": "^1.2.0",
-    "yeoman-generator": "^1.0.0",
-    "yosay": "^1.2.1"
+    "generator-license": "^5.1.0",
+    "inquirer-npm-name": "^2.0.0",
+    "lodash": "^4.17.4",
+    "node-version-data": "^1.0.1",
+    "parse-author": "^1.0.0",
+    "source-map-support": "^0.4.11",
+    "yeoman-generator": "^1.1.0"
   },
   "devDependencies": {
-    "semistandard": "^9.2.1",
-    "yeoman-assert": "^2.2.1",
+    "babel-cli": "^6.23.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-bluebird": "^1.0.1",
+    "babel-preset-env": "^1.2.0",
+    "babel-register": "^6.23.0",
+    "eslint": "^3.17.0",
+    "eslint-config-semistandard": "^7.0.0",
+    "eslint-config-standard": "^7.0.0",
+    "eslint-plugin-lodash-fp": "^2.1.3",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.1.1",
+    "yeoman-assert": "^3.0.0",
     "yeoman-test": "^1.6.0"
   },
   "repository": {
     "url": "https://github.com/boneskull/bonestorm.git",
     "type": "git"
   },
-  "scripts": {},
+  "scripts": {
+    "build:watch": "babel --watch src --out-dir generators"
+  },
   "license": "MIT"
 }
