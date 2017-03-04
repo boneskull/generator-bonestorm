@@ -1,6 +1,6 @@
 {
   "name": "generator-bonestorm",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "a Yeoman generator written by boneskulls for boneskulls",
   "homepage": "https://github.com/boneskull/generator-bonestorm",
   "author": {
