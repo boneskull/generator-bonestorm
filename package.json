@@ -51,8 +51,8 @@
     "type": "git"
   },
   "scripts": {
-    "build:watch": "babel --source-maps --watch src --out-dir generators",
-    "prepublish": "babel --source-maps src --out-dir generators",
+    "build:watch": "babel --source-maps --watch --out-dir generators src",
+    "prepublish": "babel --source-maps --out-dir generators src",
     "test": "eslint '*.js' src test",
     "preversion": "npm test"
   },
