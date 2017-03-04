@@ -2,7 +2,7 @@
   "name": "generator-bonestorm",
   "version": "0.1.2",
   "description": "a Yeoman generator written by boneskulls for boneskulls",
-  "homepage": "https://github.com/boneskull/bonestorm",
+  "homepage": "https://github.com/boneskull/generator-bonestorm",
   "author": {
     "name": "Christopher Hiller",
     "email": "boneskull@boneskull.com",
@@ -48,7 +48,7 @@
     "yeoman-test": "^1.6.0"
   },
   "repository": {
-    "url": "https://github.com/boneskull/bonestorm.git",
+    "url": "https://github.com/boneskull/generator-bonestorm.git",
     "type": "git"
   },
   "scripts": {
