@@ -12,4 +12,4 @@ Only REAL BONESKULLS can use this generator; others may bask in its life-affirmi
 
 ## License
 
-:copyright: 2017 [Christopher Hiller](https://boneskull.com).  Licensed MIT.
+© 2017 [Christopher Hiller](https://boneskull.com).  Licensed MIT.
