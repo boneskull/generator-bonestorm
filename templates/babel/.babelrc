@@ -7,11 +7,9 @@
           "node": <%= engine %>
         }
       }
-    ],
-    "bluebird"
+    ]
   ],
   "plugins": [
-    "transform-runtime",
     "add-module-exports"
   ],
   "sourceMaps": true
