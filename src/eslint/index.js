@@ -24,8 +24,8 @@ export default class BonestormESLint extends Generator {
         'eslint-config-semistandard'
       ], rootPkg.devDependencies),
       scripts: {
-        lint: "eslint '*.js' src test"
-        pretest: "npm run eslint"
+        lint: "eslint '*.js' src test",
+        pretest: 'npm run eslint'
       }
     });
 
