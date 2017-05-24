@@ -29,7 +29,8 @@
     "node-version-data": "^1.0.1",
     "parse-author": "^2.0.0",
     "source-map-support": "^0.4.15",
-    "yeoman-generator": "^1.1.1"
+    "yeoman-generator": "^1.1.1",
+    "snyk": "^1.30.1"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -56,9 +57,11 @@
   "scripts": {
     "build": "babel --source-maps --out-dir generators src",
     "build:watch": "babel --source-maps --watch --out-dir generators src",
-    "prepublish": "npm run build",
+    "prepublish": "npm run snyk-protect && npm run build",
     "test": "eslint '*.js' src test",
-    "preversion": "npm test"
+    "preversion": "npm test",
+    "snyk-protect": "snyk protect"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
