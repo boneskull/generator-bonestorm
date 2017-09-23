@@ -20,6 +20,10 @@ export default class BonestormNode extends Generator {
         type: 'list',
         choices: [
           {
+            name: 'v8.x (Carbon)',
+            value: 8
+          },
+          {
             name: 'v6.x (Boron)',
             value: 6
           },
@@ -28,7 +32,7 @@ export default class BonestormNode extends Generator {
             value: 4
           }
         ],
-        default: 4
+        default: 6
       }
     ];
 
